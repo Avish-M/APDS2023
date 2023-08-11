@@ -19,7 +19,7 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
-          - sonarcloud/scan
+          
 
 sonarqube:
     working_directory: ~/build
@@ -55,4 +55,3 @@ workflows:
     jobs:
       - say-hello
       - sonarqube
-          
